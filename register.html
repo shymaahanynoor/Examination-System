@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.js"></script>
+</head>
+
+<body>
+  <div id="container1">
+      <img src="./images/planet.png" alt="plant" id="plantImg">
+      <img src="./images/boy.svg" alt="boy" id="boyImg">
+      <form id="myform" method="get">
+          <p id="signUp">Sign up</p>  
+            <input type="text" id="firstName" class="name" placeholder="First name" >
+            <span class="nameSpan"></span>
+
+            <input type="text" id="lastName" class="name" placeholder="Last name">
+            <span class="nameSpan"></span>
+
+            <input type="text" id="e-mail" onchange="checkEmail(event)" placeholder="Email">
+            <span id="emailSpan"></span>
+
+            <input type="password" id="pass" onchange="checkPassword(event)" placeholder="Password"> 
+            <span id="passSpan"></span>
+
+            <input type="password" id="pass2" onchange="checkPassword2(event)" placeholder="Re-enter password">
+            <span id="pass2Span"></span>
+
+            <p>if you have acount <a href="login.html">Sign In</a></p>
+
+            <input type="submit" value="Register" id="signBtn">
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>
